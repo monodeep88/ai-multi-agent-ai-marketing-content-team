@@ -1,0 +1,144 @@
+{
+  "mode": "ai",
+  "project_title": "Marketing Content Team AI Assistant",
+  "short_description": "AI-powered content creation and review assistant for marketing teams",
+  "domain_summary": "Marketing content creation and review process involves multiple stakeholders and tasks. This project aims to automate content creation, review, and approval using multi-agent AI.",
+  "user_persona": "Marketing Team Lead: Responsible for managing marketing content creation and review process",
+  "architecture_notes": [
+    "Use containerization (Docker) for each microservice",
+    "Implement API gateway for secure communication between microservices",
+    "Use a message broker (e.g., RabbitMQ) for asynchronous communication"
+  ],
+  "backend_modules": [
+    "Content Creation Agent: Generates marketing content using NLP and machine learning algorithms",
+    "Content Review Agent: Reviews generated content for quality and consistency",
+    "Approval Agent: Handles approval process for reviewed content"
+  ],
+  "frontend_features": [
+    "Content Creation Interface: Allows users to input content requirements and generate content",
+    "Content Review Interface: Displays reviewed content for approval"
+  ],
+  "data_sources": [
+    "Marketing Database: Stores marketing content and campaign data",
+    "Knowledge Graph: Stores marketing knowledge and best practices"
+  ],
+  "testing_strategy": [
+    "Unit testing, integration testing, and end-to-end testing using Pytest and Docker"
+  ],
+  "starter_questions": [
+    "What is the marketing content creation process?",
+    "How can we automate content creation and review?",
+    "What are the key performance indicators (KPIs) for marketing content?"
+  ],
+  "workflow_steps": [
+    "Content Creation: Generate marketing content using NLP and machine learning algorithms",
+    "Content Review: Review generated content for quality and consistency",
+    "Approval: Handle approval process for reviewed content"
+  ],
+  "business_rules": [
+    "Review agent checks content against marketing best practices",
+    "Approval agent handles approval process"
+  ],
+  "sample_documents": [
+    {
+      "filename": "marketing_content_creation_process.pdf",
+      "content": "Marketing content creation process involves multiple stakeholders and tasks. This document outlines the process and best practices."
+    },
+    {
+      "filename": "marketing_content_review_checklist.pdf",
+      "content": "This checklist outlines the key points to review when evaluating marketing content for quality and consistency."
+    }
+  ],
+  "tool_catalog": [
+    {
+      "name": "BERT",
+      "description": "Pre-trained language model for NLP tasks"
+    },
+    {
+      "name": "RabbitMQ",
+      "description": "Message broker for asynchronous communication"
+    }
+  ],
+  "agent_plan": [
+    {
+      "name": "Architecture Agent",
+      "role": "Define app boundaries, data flow, runtime stack, and integration points.",
+      "outputs": [
+        "Use containerization (Docker) for each microservice",
+        "Implement API gateway for secure communication between microservices",
+        "Use a message broker (e.g., RabbitMQ) for asynchronous communication"
+      ]
+    },
+    {
+      "name": "Backend Agent",
+      "role": "Design FastAPI modules, service contracts, validation, and error handling.",
+      "outputs": [
+        "Content Creation Agent: Generates marketing content using NLP and machine learning algorithms",
+        "Content Review Agent: Reviews generated content for quality and consistency",
+        "Approval Agent: Handles approval process for reviewed content"
+      ]
+    },
+    {
+      "name": "Frontend Agent",
+      "role": "Design React screens, state flow, controls, and user feedback states.",
+      "outputs": [
+        "Content Creation Interface: Allows users to input content requirements and generate content",
+        "Content Review Interface: Displays reviewed content for approval"
+      ]
+    },
+    {
+      "name": "Database Agent",
+      "role": "Design persistence models, sample data, indexes, and audit records.",
+      "outputs": [
+        "Run history",
+        "Source document metadata",
+        "Generated workflow audit records"
+      ]
+    },
+    {
+      "name": "Testing Agent",
+      "role": "Define contract tests, smoke tests, and generated project validation.",
+      "outputs": [
+        "Unit testing, integration testing, and end-to-end testing using Pytest and Docker"
+      ]
+    },
+    {
+      "name": "DevOps Agent",
+      "role": "Define environment variables, Docker workflow, and repository packaging.",
+      "outputs": [
+        "Docker-ready project",
+        "Environment sample file",
+        "GitHub repository upload"
+      ]
+    },
+    {
+      "name": "Reviewer Agent",
+      "role": "Review the generated plan for completeness, security, and portfolio quality.",
+      "outputs": [
+        "Content Creation: Generate marketing content using NLP and machine learning algorithms",
+        "Content Review: Review generated content for quality and consistency",
+        "Approval: Handle approval process for reviewed content"
+      ]
+    }
+  ],
+  "model_provider": "groq",
+  "model_name": "llama-3.1-8b-instant",
+  "fallback_reason": "OpenAI limit reached. Automatically switched to Groq.",
+  "architecture": "Content Writing Team",
+  "architecture_template_id": 23,
+  "architecture_template_path": "templates/multi-agent-ai/content-writing-team",
+  "architecture_description": "Content Writing Team for multi-agent content drafting.",
+  "architecture_version": "1.0",
+  "architecture_origin": "built_in",
+  "architecture_quality_score": 70,
+  "architecture_evolution_notes": "",
+  "architecture_technology": null,
+  "architecture_source_version": null,
+  "validation_pipeline": [
+    "pytest",
+    "npm install",
+    "npm run build",
+    "docker compose config",
+    "docker compose build"
+  ]
+}
